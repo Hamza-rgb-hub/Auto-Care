@@ -1,0 +1,52 @@
+@import "tailwindcss";
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+h1 {
+  font-family: "Bebas Neue", cursive;
+}
+
+.bg {
+  position: relative;
+  overflow: hidden; /* ensures pseudo-element doesn't overflow */
+}
+
+.bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+background: #202020;
+background: linear-gradient(180deg, rgba(32, 32, 32, 1) 0%, rgba(49, 38, 67, 1) 100%);
+  opacity: 0.2; /* reduce background opacity */
+  z-index: 0; /* behind the content */
+  pointer-events: none; /* allows clicking buttons */
+}
+
+.bg > * {
+  position: relative;
+  z-index: 1; /* bring content above the pseudo-element */
+}
+
+.child {
+  position: relative;
+}
+
+.child::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: RGBA(97, 20, 228, 0.2);
+  background: radial-gradient(
+    circle,
+    rgba(97, 20, 228, 0.1) 0%,
+    rgba(42, 30, 56, 1) 100%
+  );
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.child img {
+  position: relative;
+  z-index: 2; /* 👈 image upar rhe gi */
+}
