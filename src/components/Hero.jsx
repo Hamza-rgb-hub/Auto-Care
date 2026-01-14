@@ -26,7 +26,7 @@ const Hero = () => {
       </div>
 
       <div className="w-[90%] mx-auto md:mt-[-5%] mt-3.5 relative z-20">
-        <img src="/images/car.png" alt="car" className="w-full drop-shadow-2xl" />
+        <img src="/images/car-Pic.png" alt="car" className="w-full drop-shadow-2xl" />
       </div>
 
       <div className="w-[90%] mx-auto flex justify-between absolute bottom-10 left-1/2 md:gap-0 gap-2.5 -translate-x-1/2 z-30">
