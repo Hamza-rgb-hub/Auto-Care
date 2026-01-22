@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronRight, Award, Users, Target, Sparkles } from 'lucide-react';
+import {Link} from 'react-router-dom'
 
 const AboutPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -96,25 +97,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
-      {/* Stats Section
-      <section className="py-16 sm:py-20 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-                <div className="relative bg-gray-900/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 sm:p-8 text-center hover:border-purple-500/40 transition-all duration-300">
-                  <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-gray-400 text-sm sm:text-base">{stat.label}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* Story Section */}
       <section className="py-20 border-t border-purple-500/10 relative">

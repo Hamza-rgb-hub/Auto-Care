@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link} from 'react-router-dom'
 import {
   Droplets,
   Sparkles,
@@ -128,9 +129,9 @@ const Service = () => {
             From basic washes to premium detailing, we offer comprehensive
             services to keep your vehicle looking its absolute best.
           </p>
-          <button className="px-8 py-3 max-w-max bg-purple-600 rounded-md hover:bg-purple-700 transition font-medium flex items-center gap-2 mx-auto lg:mx-0">
+          <Link to={'/contact'}  className="px-8 py-3 max-w-max bg-purple-600 rounded-md hover:bg-purple-700 transition font-medium flex items-center gap-2 mx-auto lg:mx-0">
             Book Now <ArrowRight className="w-4 h-4" />
-          </button>
+          </Link>
         </div>
 
         {/* Right Image */}

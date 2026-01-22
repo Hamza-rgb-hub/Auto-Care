@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import HotspotMarker from "./Hotspot";
 const Services = () => {
   return (
@@ -17,7 +18,8 @@ const Services = () => {
     </h2>
   </div>
 
-  <button
+  <Link
+    to={'/contact'}
     className="
       px-6 py-2.5
       rounded-full
@@ -33,7 +35,7 @@ const Services = () => {
   >
     <ArrowRight className="w-5 h-5" />
     See All Services
-  </button>
+  </Link>
 
 </div>
 
