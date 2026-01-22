@@ -1,6 +1,7 @@
 import React from "react";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Cta from "./Cta";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -23,16 +24,67 @@ const Footer = () => {
             </p>
 
             <div className="flex space-x-4 mt-5">
-              <a className="w-9 h-9 rounded-md bg-white text-[#6114E4] hover:bg-white/90 transition flex items-center justify-center">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://x.com/"
+                className="
+      w-9 h-9 rounded-md
+      bg-white text-[#6114E4]
+      transition-all duration-300
+      flex items-center justify-center
+      hover:scale-110
+      hover:shadow-lg hover:shadow-[#6114E4]/40
+    "
+              >
                 <Twitter className="w-4 h-4" />
               </a>
-              <a className="w-9 h-9 rounded-md bg-white text-[#6114E4] hover:bg-white/90 transition flex items-center justify-center">
+
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/"
+                className="
+      w-9 h-9 rounded-md
+      bg-white text-[#6114E4]
+      transition-all duration-300
+      flex items-center justify-center
+      hover:scale-110
+      hover:shadow-lg hover:shadow-[#6114E4]/40
+    "
+              >
                 <Facebook className="w-4 h-4" />
               </a>
-              <a className="w-9 h-9 rounded-md bg-white text-[#6114E4] hover:bg-white/90 transition flex items-center justify-center">
+
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/"
+                className="
+      w-9 h-9 rounded-md
+      bg-white text-[#6114E4]
+      transition-all duration-300
+      flex items-center justify-center
+      hover:scale-110
+      hover:shadow-lg hover:shadow-[#6114E4]/40
+    "
+              >
                 <Instagram className="w-4 h-4" />
               </a>
-              <a className="w-9 h-9 rounded-md bg-white text-[#6114E4] hover:bg-white/90 transition flex items-center justify-center">
+
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/"
+                className="
+      w-9 h-9 rounded-md
+      bg-white text-[#6114E4]
+      transition-all duration-300
+      flex items-center justify-center
+      hover:scale-110
+      hover:shadow-lg hover:shadow-[#6114E4]/40
+    "
+              >
                 <Linkedin className="w-4 h-4" />
               </a>
             </div>
@@ -44,29 +96,33 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="" className="text-gray-300 hover:text-white">
+                <Link to={"/"} className="text-gray-300 hover:text-white">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="" className="text-gray-300 hover:text-white">
+                <Link to={"/about"} className="text-gray-300 hover:text-white">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="" className="text-gray-300 hover:text-white">
+                <Link
+                  to={"/services"}
+                  className="text-gray-300 hover:text-white"
+                >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="" className="text-gray-300 hover:text-white">
-                  Blog
-                </a>
+                <Link className="text-gray-300 hover:text-white">Blog</Link>
               </li>
               <li>
-                <a href="" className="text-gray-300 hover:text-white">
+                <Link
+                  to={"/contact"}
+                  className="text-gray-300 hover:text-white"
+                >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -77,19 +133,19 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li className="hover:text-white">
-                <a href="">Exterior Hand Washing</a>
+                <Link to={"/services"}>Exterior Hand Washing</Link>
               </li>
               <li className="hover:text-white">
-                <a href="">Paint Correction</a>
+                <Link to={"/services"}>Paint Correction</Link>
               </li>
               <li className="hover:text-white">
-                <a href="">Interior Deep Cleaning</a>
+                <Link to={"/services"}>Interior Deep Cleaning</Link>
               </li>
               <li className="hover:text-white">
-                <a href="">Engine Bay Detailing</a>
+                <Link to={"/services"}>Engine Bay Detailing</Link>
               </li>
               <li className="hover:text-white">
-                <a href="">Head Light Restoration</a>
+                <Link to={"/services"}>Head Light Restoration</Link>
               </li>
             </ul>
           </div>
@@ -105,12 +161,12 @@ const Footer = () => {
                 America
               </li>
               <li>
-                <a
+                <Link
                   href="mailto:america291@gmail.com"
                   className="hover:text-white"
                 >
                   america291@gmail.com
-                </a>
+                </Link>
               </li>
               <li>+92 42532624 / +92 4253624</li>
             </ul>
