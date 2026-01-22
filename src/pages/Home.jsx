@@ -1,18 +1,16 @@
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Services from "../components/Services";
 import Client from "../components/Client";
 import Testimonial from "../components/Testimonial";
-import Footer from "../components/Footer";
 import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
 
-export default function LandingPage() {
+export default function Home() {
 
     useEffect(() => {
     const lenis = new Lenis({
-      duration: 8,
+      duration: 5,
       smooth: true,
       smoothTouch: true,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
@@ -32,13 +30,11 @@ export default function LandingPage() {
 
   return (
     <>
-      <Navbar />
       <Hero />
       <About />
       <Services />
       <Client />
       <Testimonial /> 
-      <Footer />
     </>
   );
 }
