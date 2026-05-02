@@ -176,7 +176,7 @@ const AboutPage = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-600/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative bg-gray-900/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl overflow-hidden hover:border-purple-500/40 transition-all duration-300">
                   <div className="aspect-square bg-gradient-to-br from-purple-600/20 to-blue-600/20">
-                    <img src="/public/images/men.jpg" alt={member.name} className="w-full h-[420px] object-cover" />
+                    <img src="/images/men.jpg" alt={member.name} className="w-full h-[420px] object-cover" />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-1">{member.name}</h3>
