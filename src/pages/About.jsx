@@ -25,7 +25,8 @@ const AboutPage = () => {
     {
       icon: <Award className="w-8 h-8" />,
       title: "Excellence",
-      description: "We maintain the highest standards in every service we provide, ensuring your vehicle receives premium care."
+      description: "We maintain the highest standards in every service we provide, ensuring your vehicle receives premium care.",
+      Image: "/images/men.jpg"
     },
     {
       icon: <Users className="w-8 h-8" />,
@@ -48,17 +49,23 @@ const AboutPage = () => {
     {
       name: "Alex Rodriguez",
       role: "Founder & CEO",
-      description: "25 years of automotive care expertise"
+      description: "25 years of automotive care expertise",
+      image: "/images/men.jpg"  
+
     },
     {
       name: "Sarah Mitchell",
       role: "Operations Director",
-      description: "Ensuring excellence in every service"
+      description: "Ensuring excellence in every service",
+      image: "/images/men.jpg"  
+
     },
     {
       name: "Mike Chen",
       role: "Lead Detailing Specialist",
-      description: "Master of automotive perfection"
+      description: "Master of automotive perfection",
+      image: "/images/men.jpg"  
+
     }
   ];
 
@@ -176,7 +183,7 @@ const AboutPage = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-600/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative bg-gray-900/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl overflow-hidden hover:border-purple-500/40 transition-all duration-300">
                   <div className="aspect-square bg-gradient-to-br from-purple-600/20 to-blue-600/20">
-                    <img src="/images/men.jpg" alt={member.name} className="w-full h-[420px] object-cover" />
+                    <img src={member.image} alt={member.name} className="w-full h-[420px] object-cover" />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-1">{member.name}</h3>
